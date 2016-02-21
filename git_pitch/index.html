@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="BMI Calculator">
+  <meta name="author" content="Andre Christoffer Andersen">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>BMI Calculator</h1>
+    <h2>BMI Calculation with grahical interface</h2>
+    <p>Andre Christoffer Andersen<br/>Coursera Student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Presentation Content</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The following presentation will go through the following parts:</p>
+
+<ol>
+<li>Definition of BMI</li>
+<li>Example Calculation</li>
+<li>Graphical Representation</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Definition of BMI</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>BMI as defined by Wikipedia:</p>
+
+<ul>
+<li>&quot;The body mass index (BMI) or Quetelet index is a value derived from the mass (weight) and height of an individual. The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in metres.&quot;</li>
+</ul>
+
+<p>BMI as defined by NHLBI:</p>
+
+<ul>
+<li>&quot;Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.&quot;&quot;</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Example Calculation</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">cm &lt;- 180
+kg &lt;- 80
+bmi &lt;- kg / cm^2 * 10000
+print(bmi)
+</code></pre>
+
+<pre><code>## [1] 24.69136
+</code></pre>
+
+<p>A person of hight 180 cm and weight 80 kg would gets a BMI of 24.7. This is within &#39;normal&#39; paramters; however, this person doesn&#39;t easely know the bounds of how high or low he can get before he should take remediating action. A graphical representation could help with this.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Graphical Representation</h2>
+  </hgroup>
+  <article data-timings="">
+    <iframe src="https://andersen.shinyapps.io/bmi_calc/"></iframe>
+
+<p>If the above app doesn&#39;t work please visit it directly <a href="https://andersen.shinyapps.io/bmi_calc/">here</a>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Presentation Content'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Definition of BMI'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Example Calculation'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Graphical Representation'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
